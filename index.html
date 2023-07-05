@@ -9,7 +9,7 @@
     <h1>Web Scraper</h1>
   </header>
   <main>
-    <form id="urlForm" action="/count" method="post">
+    <form id="urlForm" action="/" method="post">
       <input type="text" id="urlInput" name="url" placeholder="Enter website URL" />
       <button type="submit">Get insight</button>
     </form>
@@ -23,7 +23,7 @@
           <th>Actions</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="insightsBody">
         <!-- Table rows will be dynamically added using JavaScript -->
       </tbody>
     </table>
