@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 // Endpoint to get insights
-app.post('/api/insights', async (req, res) => {
+app.post('/', async (req, res) => {
   const { url } = req.body;
   try {
     const wordCount = await countWords(url);
