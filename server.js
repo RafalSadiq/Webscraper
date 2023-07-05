@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
 // Endpoint to get insights
 app.post('/api/insights', async (req, res) => {
   const { url } = req.body;
